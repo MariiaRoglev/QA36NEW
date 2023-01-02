@@ -102,4 +102,39 @@ public class Login {
         // close browser
         // wd.quit();
     }
+
+
+    @Test
+    public void csslocatrstest()
+    {
+        wd.findElement(By.linkText("LOGIN")).click();
+
+        wd.findElement(By.tagName("div"));
+
+        wd.findElement(By.cssSelector("div"));
+        wd.findElement(By.cssSelector("a"));
+        wd.findElement(By.cssSelector("input"));
+        wd.findElement(By.cssSelector("button"));
+
+        wd.findElement(By.className("container"));
+        wd.findElement(By.cssSelector(".container"));
+        wd.findElement(By.cssSelector(".active"));
+        wd.findElement(By.cssSelector("[class = 'active']"));
+
+        wd.findElement(By.cssSelector("#root"));
+        wd.findElement(By.cssSelector("[href= '/login']"));
+
+        wd.findElement(By.cssSelector("[placeholder = 'Password']"));
+        wd.findElement(By.cssSelector("[placeholder ^= 'Pass']"));
+        wd.findElement(By.cssSelector("[placeholder *= 'ass']"));
+        wd.findElement(By.cssSelector("[placeholder $= 'ord']"));
+
+        wd.findElement(By.cssSelector("div#root.container"));
+        wd.findElement(By.cssSelector("a[href= '/login]"));
+        wd.findElement(By.cssSelector("input[name= 'email']"));
+        wd.findElement(By.cssSelector("button [name='login']"));
+
+
+    }
+
 }
